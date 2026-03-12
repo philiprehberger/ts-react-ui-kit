@@ -1,11 +1,11 @@
-# @philiprehberger/react-ui-kit
+# @philiprehberger/ts-react-ui-kit
 
 Accessible React UI component library with Tailwind CSS.
 
 ## Installation
 
 ```bash
-npm install @philiprehberger/react-ui-kit clsx tailwind-merge
+npm install @philiprehberger/ts-react-ui-kit clsx tailwind-merge
 ```
 
 ## Components
@@ -46,7 +46,7 @@ npm install @philiprehberger/react-ui-kit clsx tailwind-merge
 ## Usage
 
 ```tsx
-import { Button, Card, Input, Modal } from '@philiprehberger/react-ui-kit';
+import { Button, Card, Input, Modal } from '@philiprehberger/ts-react-ui-kit';
 
 <Card variant="bordered" padding="lg">
   <Input label="Email" type="email" required />
