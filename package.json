@@ -1,6 +1,6 @@
 {
   "name": "@philiprehberger/react-ui-kit",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Accessible React UI component library with Tailwind CSS",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
