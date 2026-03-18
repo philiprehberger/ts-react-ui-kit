@@ -4,7 +4,7 @@
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/react-ui-kit.svg)](https://www.npmjs.com/package/@philiprehberger/react-ui-kit)
 [![License](https://img.shields.io/github/license/philiprehberger/react-ui-kit)](LICENSE)
 
-Accessible React UI component library with Tailwind CSS.
+Accessible React UI component library with Tailwind CSS
 
 ## Installation
 
@@ -12,7 +12,7 @@ Accessible React UI component library with Tailwind CSS.
 npm install @philiprehberger/react-ui-kit clsx tailwind-merge
 ```
 
-## Components
+## Usage
 
 ### Display
 - **Button** - Multi-variant button with loading states
@@ -47,7 +47,7 @@ npm install @philiprehberger/react-ui-kit clsx tailwind-merge
 ### Accessibility
 - **LiveRegionProvider** - Screen reader announcements (useAnnounce)
 
-## Usage
+## Examples
 
 ```tsx
 import { Button, Card, Input, Modal } from '@philiprehberger/react-ui-kit';
@@ -58,6 +58,51 @@ import { Button, Card, Input, Modal } from '@philiprehberger/react-ui-kit';
 </Card>
 ```
 
+## API
+
+### Components
+
+| Component | Description |
+|-----------|-------------|
+| `Button` | Multi-variant button with loading states |
+| `Card`, `CardHeader`, `CardBody`, `CardFooter`, `CompoundCard` | Container with header/body/footer slots |
+| `Badge`, `DiscountBadge`, `NewBadge`, `FeaturedBadge` | Status indicator badges |
+| `Input` | Text input, select, and textarea with validation states |
+| `Checkbox` | Accessible checkbox with label |
+| `RadioGroup` | Grouped radio buttons |
+| `Modal` | Dialog with focus trap and keyboard navigation |
+| `Dropdown` | Dropdown menu with keyboard support |
+| `Tabs` | Compound component tabs (Tabs.List, Tabs.Tab, Tabs.Panel) |
+| `Tooltip` | Hover tooltip with positioning |
+| `ConfirmDialog` | Confirmation dialog with variants |
+| `Pagination` | Page navigation with ellipsis |
+| `Skeleton`, `TextSkeleton`, `AvatarSkeleton`, `CardSkeleton` | Loading placeholders |
+| `DataList`, `GridList`, `StackList`, `DataListSkeleton`, `DataListEmpty` | Generic data list with layouts |
+
+### Form Components
+
+| Component | Description |
+|-----------|-------------|
+| `FormField`, `TextField`, `EmailField`, `PasswordField`, `SearchField`, `NumberField` | Field wrappers with validation |
+| `FormGroup`, `FormRow` | Form layout helpers |
+| `FormInput` | Input with form validation integration |
+| `FormSelect` | Select with form validation integration |
+| `FormTextarea` | Textarea with character count |
+
+### Providers & Hooks
+
+| Export | Type | Description |
+|--------|------|-------------|
+| `ToastProvider` | Component | Toast notification context provider |
+| `useToast()` | Hook | Show toast notifications |
+| `LiveRegionProvider` | Component | Screen reader announcement provider |
+| `useAnnounce()` | Hook | Trigger screen reader announcements |
+
+### Utilities
+
+| Export | Description |
+|--------|-------------|
+| `cn(...inputs)` | Merge class names (clsx + tailwind-merge) |
 
 ## Development
 
