@@ -2,7 +2,7 @@ import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 
 describe('react-ui-kit', async () => {
-  const mod = await import('../../dist/index.mjs');
+  const mod = await import('../../dist/index.js');
 
   it('exports Button', () => {
     assert.ok(mod.Button !== undefined, 'Button should be exported');
