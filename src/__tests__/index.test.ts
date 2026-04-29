@@ -23,4 +23,8 @@ describe('react-ui-kit', async () => {
   it('exports cn as a function', () => {
     assert.ok(typeof mod.cn === 'function');
   });
+
+  it('exports Spinner', () => {
+    assert.ok(mod.Spinner !== undefined, 'Spinner should be exported');
+  });
 });

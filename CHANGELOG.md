@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.0
+
+- Add `Spinner` accessible loading indicator with `xs`/`sm`/`md`/`lg`/`xl` size variants and customizable label
+- Restructure README Usage section into per-category subsections (Display, Form, Overlay, Navigation & Data); remove non-standard Examples heading
+
 ## 0.1.9
 
 - Fix README GitHub URLs to use correct repo name (ts-react-ui-kit)

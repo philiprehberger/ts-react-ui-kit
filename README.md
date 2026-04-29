@@ -14,41 +14,6 @@ npm install @philiprehberger/react-ui-kit clsx tailwind-merge
 
 ## Usage
 
-### Display
-- **Button** - Multi-variant button with loading states
-- **Card** - Container with CardHeader, CardBody, CardFooter
-- **Badge** - Status indicators (DiscountBadge, NewBadge, FeaturedBadge)
-- **Skeleton** - Loading placeholders (TextSkeleton, AvatarSkeleton, CardSkeleton)
-
-### Form
-- **Input** - Text input, select, and textarea with validation states
-- **Checkbox** - Accessible checkbox with label
-- **RadioGroup** - Grouped radio buttons
-- **FormInput** - Input with form validation integration
-- **FormSelect** - Select with form validation integration
-- **FormTextarea** - Textarea with character count
-- **FormField** - Field wrappers (TextField, EmailField, PasswordField, etc.)
-- **FormGroup** / **FormRow** - Layout helpers
-
-### Overlay
-- **Modal** - Dialog with focus trap and keyboard navigation
-- **Dropdown** - Dropdown menu with keyboard support
-- **Tooltip** - Hover tooltip with positioning
-- **ConfirmDialog** - Confirmation dialog with variants
-- **Toast** - Toast notifications (ToastProvider + useToast)
-
-### Navigation
-- **Tabs** - Compound component tabs (Tabs.List, Tabs.Tab, Tabs.Panel)
-- **Pagination** - Page navigation with ellipsis
-
-### Data
-- **DataList** - Generic list with grid/stack layouts (GridList, StackList)
-
-### Accessibility
-- **LiveRegionProvider** - Screen reader announcements (useAnnounce)
-
-## Examples
-
 ```tsx
 import { Button, Card, Input, Modal } from '@philiprehberger/react-ui-kit';
 
@@ -56,6 +21,50 @@ import { Button, Card, Input, Modal } from '@philiprehberger/react-ui-kit';
   <Input label="Email" type="email" required />
   <Button variant="primary" size="md">Submit</Button>
 </Card>
+```
+
+### Display
+
+```tsx
+import { Button, Badge, Skeleton, Spinner } from '@philiprehberger/react-ui-kit';
+
+<Button isLoading>Save</Button>
+<Badge variant="success">Active</Badge>
+<Skeleton width="60%" height={24} />
+<Spinner size="md" label="Loading users" />
+```
+
+### Form
+
+```tsx
+import { FormInput, FormSelect, FormTextarea } from '@philiprehberger/react-ui-kit';
+
+<FormInput name="email" label="Email" type="email" required />
+<FormSelect name="role" label="Role" options={[{ value: 'admin', label: 'Admin' }]} />
+<FormTextarea name="bio" label="Bio" maxLength={280} />
+```
+
+### Overlay
+
+```tsx
+import { Modal, ConfirmDialog, ToastProvider, useToast } from '@philiprehberger/react-ui-kit';
+
+<Modal isOpen={open} onClose={close} title="Settings">
+  ...
+</Modal>
+```
+
+### Navigation & Data
+
+```tsx
+import { Tabs, Pagination, DataList } from '@philiprehberger/react-ui-kit';
+
+<Tabs>
+  <Tabs.List>
+    <Tabs.Tab id="general">General</Tabs.Tab>
+  </Tabs.List>
+  <Tabs.Panel id="general">...</Tabs.Panel>
+</Tabs>
 ```
 
 ## API
@@ -77,6 +86,7 @@ import { Button, Card, Input, Modal } from '@philiprehberger/react-ui-kit';
 | `ConfirmDialog` | Confirmation dialog with variants |
 | `Pagination` | Page navigation with ellipsis |
 | `Skeleton`, `TextSkeleton`, `AvatarSkeleton`, `CardSkeleton` | Loading placeholders |
+| `Spinner` | Accessible loading spinner with size variants |
 | `DataList`, `GridList`, `StackList`, `DataListSkeleton`, `DataListEmpty` | Generic data list with layouts |
 
 ### Form Components

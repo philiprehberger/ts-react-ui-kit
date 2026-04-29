@@ -55,6 +55,10 @@ export { Pagination } from './Pagination';
 // Skeleton
 export { Skeleton, TextSkeleton, AvatarSkeleton, CardSkeleton } from './Skeleton';
 
+// Spinner
+export { Spinner } from './Spinner';
+export type { SpinnerProps, SpinnerSize } from './Spinner';
+
 // DataList
 export { DataList, GridList, StackList, DataListSkeleton, DataListEmpty } from './DataList';
 export type { DataListProps } from './DataList';
